@@ -41,7 +41,7 @@ const FormField = <
 
 const useFormField = () => {
   const fieldContext = React.useContext(FormFieldContext)
-  const itemContext = React.useContext(FormItemContext)
+  const itemContext = React.useContext(FormitemContext)
   const { getFieldState, formState } = useFormContext()
 
   const fieldState = getFieldState(fieldContext.name, formState)
@@ -62,12 +62,12 @@ const useFormField = () => {
   }
 }
 
-type FormItemContextValue = {
+type FormitemContextValue = {
   id: string
 }
 
-const FormItemContext = React.createContext<FormItemContextValue>(
-  {} as FormItemContextValue
+const FormitemContext = React.createContext<FormitemContextValue>(
+  {} as FormitemContextValue
 )
 
 const FormItem = React.forwardRef<
@@ -77,9 +77,9 @@ const FormItem = React.forwardRef<
   const id = React.useId()
 
   return (
-    <FormItemContext.Provider value={{ id }}>
+    <FormitemContext.Provider value={{ id }}>
       <div ref={ref} className={cn("space-y-2", className)} {...props} />
-    </FormItemContext.Provider>
+    </FormitemContext.Provider>
   )
 })
 FormItem.displayName = "FormItem"

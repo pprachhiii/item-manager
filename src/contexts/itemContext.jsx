@@ -3,7 +3,7 @@ import { toast } from "sonner";
 import itemService from "../services/ItemService";
 
 // Create context
-const ItemContext = createContext();
+const itemContext = createContext();
 
 export const ItemProvider = ({ children }) => {
   const [items, setItems] = useState([]);
@@ -119,16 +119,16 @@ export const ItemProvider = ({ children }) => {
     setSelectedItem,
   };
 
-  return <ItemContext.Provider value={value}>{children}</ItemContext.Provider>;
+  return <itemContext.Provider value={value}>{children}</itemContext.Provider>;
 };
 
 // Custom hook to use the item context
 export const useItems = () => {
-  const context = useContext(ItemContext);
+  const context = useContext(itemContext);
   if (!context) {
     throw new Error("useItems must be used within an ItemProvider");
   }
   return context;
 };
 
-export default ItemContext;
+export default itemContext;
