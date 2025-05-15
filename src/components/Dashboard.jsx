@@ -19,8 +19,8 @@ import {
   AlertDialogTitle,
 } from "../components/ui/alert-dialog";
 import { Search, Plus } from "lucide-react";
-import ItemCard from "./ItemCard";
-import ItemForm from "./ItemForm";
+import ItemCard from "./itemCard";
+import ItemForm from "./itemForm";
 import {
   Select,
   SelectContent,
