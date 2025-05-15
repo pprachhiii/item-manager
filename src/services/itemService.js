@@ -1,4 +1,4 @@
-import ItemModel from "../models/ItemModel";
+import ItemModel from "../models/itemModel";
 
 /**
  * Service for handling item operations

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 import { toast } from "sonner";
-import itemService from "../services/ItemService";
+import itemService from "../services/itemService";
 
 // Create context
 const itemContext = createContext();
