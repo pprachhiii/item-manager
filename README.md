@@ -1,12 +1,67 @@
-# React + Vite
+# 📝 Full-Stack CRUD Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React + TypeScript + Vite** based CRUD web application that allows users to **Create**, **Read**, **Update**, and **Delete** items such as tasks. It features a modern frontend stack with **Tailwind CSS** for styling, **React Query** for API state management, and integration with local context for state sharing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔑 Current Features
 
-## Expanding the ESLint configuration
+- Full CRUD functionality for tasks/items
+- React with TypeScript for type safety and developer tooling
+- State management with **React Context** and **React Query** for server state caching
+- Responsive UI built with **Tailwind CSS**
+- Custom UI components: Toaster notifications, tooltips, modals
+- Client-side routing with **React Router**
+- Error handling and user feedback using toast/snackbar notifications
+- Local caching and offline support via React Query and context state
+- Modular folder structure separating components, contexts, pages, and API hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone git@github.com:pprachhiii/item-manager.git
+cd item-manager
+npm install
+```
+
+### Running the app
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+---
+
+## 🛠 Tech Stack
+
+- React 18 + TypeScript
+- Vite (Fast build tool)
+- Tailwind CSS (Utility-first CSS framework)
+- React Router v6 (Routing)
+- React Query (Server state caching)
+- Context API (Local state management)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.
+
+---
